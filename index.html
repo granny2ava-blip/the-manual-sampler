@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/marit/Downloads/the-manual-52-cards.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Manual — 52 Week Healing Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./The Manual Complete - digital— 52 Week Healing Deck_files/css2" rel="stylesheet">
+<link href="./The Manual Complete - digital— 52 Week Healing Deck_files/css2(1)" rel="stylesheet">
+<style>
+/* ── INTRO SECTION ── */
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bark:      #4a3020;
+    --cream:     #f7f0e6;
+    --parchment: #ede3d4;
+    --gold:      #c9a96e;
+    --clay:      #c07050;
+    --dust:      #9e8e7e;
+    --sage:      #8a9c7e;
+    --mist:      #e3d8c8;
+    --dark-text: #2C2018;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bark);
+    color: var(--cream);
+    margin: 0;
+  }
+
+  .screen {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem 3.5rem;
+    position: relative;
+  }
+
+  @media (max-width: 480px) {
+    .screen {
+      padding: 2rem 1.5rem;
+    }
+    .card-fan {
+      height: 180px !important;
+    }
+    .fan-card {
+      width: 72px !important;
+      height: 101px !important;
+    }
+  }
+
+  .screen + .screen {
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .screen.centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ══ SCREEN 1 ══ */
+  .s1-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--clay);
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .s1-the {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(4rem, 14vw, 7rem);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.0;
+    display: block;
+  }
+
+  .s1-manual {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(4rem, 14vw, 7rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--gold);
+    line-height: 1.05;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .s1-sub {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--mist);
+    display: block;
+    margin-bottom: 2.8rem;
+  }
+
+  .card-fan {
+    width: 100%;
+    max-width: 560px;
+    height: 230px;
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .fan-card {
+    position: absolute;
+    width: 98px;
+    height: 137px;
+    border-radius: 8px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+  }
+
+  .fan-card.dark {
+    background: #4a3020;
+    border: 0.5px solid rgba(201,169,110,0.25);
+    transform: rotate(-22deg);
+    left: 0%;
+    z-index: 1;
+  }
+
+  .fan-card.cream1 {
+    background: linear-gradient(145deg, #f7f0e6, #ede3d4);
+    border: 0.5px solid #e0d6cc;
+    transform: rotate(-10deg);
+    left: 18%;
+    z-index: 2;
+  }
+
+  .fan-card.cream2 {
+    background: linear-gradient(145deg, #f7f0e6, #ede3d4);
+    border: 0.5px solid #e0d6cc;
+    transform: rotate(0deg);
+    left: 34%;
+    top: 18px;
+    z-index: 3;
+  }
+
+  .fan-card.sage1 {
+    background: linear-gradient(145deg, #e8ede0, #d4dbc8);
+    border: 0.5px solid #ccd4c0;
+    transform: rotate(11deg);
+    left: 50%;
+    z-index: 2;
+  }
+
+  .fan-card.sage2 {
+    background: linear-gradient(145deg, #e8ede0, #d4dbc8);
+    border: 0.5px solid #ccd4c0;
+    transform: rotate(21deg);
+    left: 64%;
+    z-index: 1;
+  }
+
+  .fan-week {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #5A4A38;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+  }
+
+  .fan-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+
+  .fan-icon {
+    font-size: 15px;
+    margin-bottom: 4px;
+    opacity: 0.6;
+    margin-top: 8px;
+  }
+
+  .fan-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 7.5px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.55;
+    color: #2C2018;
+    letter-spacing: 0.03em;
+    max-width: 94px;
+  }
+
+  .fan-divider {
+    width: 12px;
+    height: 0.5px;
+    background: #c07050;
+    margin-top: 3px;
+  }
+
+  .fan-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6B5D50;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .fan-phase {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #D4944C;
+    position: absolute;
+    top: 9px;
+  }
+
+  .fan-back-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #D4944C;
+    margin-bottom: 3px;
+  }
+
+  .fan-text-dark {
+    font-family: 'Roboto', sans-serif;
+    font-size: 7px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #F0E8DE;
+    letter-spacing: 0.03em;
+    max-width: 94px;
+  }
+
+  .fan-back-divider {
+    width: 18px;
+    height: 0.5px;
+    background: rgba(255,255,255,0.15);
+    margin: 3px 0;
+  }
+
+  .fan-action-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #D4944C;
+    margin-bottom: 3px;
+  }
+
+  .fan-action-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.5px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #E0D8CC;
+    letter-spacing: 0.03em;
+    max-width: 94px;
+  }
+
+  .fan-brand-dark {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #D4944C;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .s1-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .s1-bullets li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mist);
+  }
+
+  .bullet-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ══ SCREEN 2 ══ */
+  .s2-deck-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mist);
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .s2-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 10vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.35;
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+  }
+
+  .s2-headline em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .s2-sub {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--mist);
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  .s2-stats {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .stat-item { text-align: center; }
+
+  .stat-num {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--mist);
+  }
+
+  .s2-scroll {
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--mist);
+    opacity: 1;
+    display: block;
+  }
+
+  /* ══ SCREEN 3 ══ */
+  .s3-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .legend-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .legend-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mist);
+  }
+
+  .s3-tagline {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+  }
+
+  .s3-hint {
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dust);
+    margin-top: 1.5rem;
+    opacity: 0.7;
+  }
+
+  /* ══ SCREENS 4/5/6 ══ */
+  .phase-line {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, var(--clay));
+    margin: 0 auto 1.5rem;
+  }
+
+  .phase-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cream);
+    padding: 0.4rem 1.2rem;
+    border-radius: 2px;
+    margin-bottom: 3rem;
+  }
+
+  .phase-tag.clay { background: var(--clay); }
+  .phase-tag.sage { background: var(--sage); }
+  .phase-tag.gold { background: var(--gold); color: var(--bark); }
+
+  .phase-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    margin-bottom: 1.2rem;
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .phase-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--mist);
+    max-width: 420px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .phase-weeks {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    width: 100%;
+  }
+
+
+/* ── DECK SECTION ── */
+
+.deck-section *{margin:0;padding:0;box-sizing:border-box}
+.deck-section{height:100vh;display:flex;flex-direction:column;font-family:'Roboto',sans-serif;background:#2C2018;-webkit-tap-highlight-color:transparent;user-select:none}
+.hdr{text-align:center;padding:12px 16px 6px;flex-shrink:0}
+.hdr h1{font-family:'Roboto',sans-serif;font-weight:400;font-style:italic;color:#E8DDD3;font-size:12px;letter-spacing:1px}
+.hdr .sub{font-weight:300;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#A89080;margin-top:2px}
+.main{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0}
+.arr{position:absolute;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid #5A4A38;background:rgba(44,32,24,0.6);color:#A89080;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:10;backdrop-filter:blur(4px)}
+.arr:active{background:#3C3028;border-color:#8C7D70;color:#E0D6CC}
+.arr:disabled{opacity:0.15}
+#pb{left:4px}
+#nb{right:4px}
+.card-area{width:100%;height:100%;display:flex;align-items:center;justify-content:center;perspective:1200px;padding:0 40px}
+.cw{width:100%;max-width:320px;height:90%;max-height:560px;cursor:pointer;position:relative}
+.card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform 0.7s cubic-bezier(0.4,0,0.2,1)}
+.card.fl{transform:rotateY(180deg)}
+.face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;display:flex;flex-direction:column;align-items:center;overflow:hidden}
+.fr{background:#F5F0EA;border:1px solid #E0D6CC;box-shadow:0 8px 32px rgba(0,0,0,0.3);justify-content:center;padding:24px 22px}
+.fr .wk{position:absolute;top:16px;left:18px;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#5A4A38}
+.fr .pd{position:absolute;top:16px;right:18px;width:14px;height:14px;border-radius:50%}
+.fr .ico{font-size:34px;margin-bottom:16px}
+.fr .aff{font-style:italic;font-weight:600;font-size:18px;line-height:1.45;color:#2C2018;text-align:center;max-width:260px;letter-spacing:0.05em}
+.fr .dv{width:32px;height:2px;background:#B85C38;margin-top:16px;border-radius:1px}
+.fr .br{position:absolute;bottom:14px;font-weight:600;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#6B5D50}
+.bk{background:#2C2018;border:1px solid #4A3828;box-shadow:0 8px 32px rgba(0,0,0,0.4);transform:rotateY(180deg);padding:18px 22px 28px;display:flex;flex-direction:column;align-items:center}
+.bk .pl{font-weight:700;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#D4944C;text-align:center;margin-bottom:8px;flex-shrink:0}
+.bk .sec{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;width:100%}
+.bk .sl{font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#D4944C;margin-bottom:16px;white-space:nowrap}
+.bk .ref{font-style:italic;font-weight:400;font-size:18px;line-height:1.5;color:#F0E8DE;text-align:center;max-width:260px;margin-bottom:24px;letter-spacing:0.05em}
+.bk .bd{width:40%;height:1px;background:#5A4A38;margin-bottom:24px;flex-shrink:0}
+.bk .al{font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#D4944C;margin-bottom:16px}
+.bk .act{font-style:normal;font-weight:400;font-size:18px;line-height:1.5;color:#F0E8DE;text-align:center;max-width:250px;letter-spacing:0.05em}
+.bk .br{font-weight:700;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#D4944C;margin-top:auto;flex-shrink:0;padding-top:8px}
+.foot{flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:6px 16px 18px;gap:5px}
+.hint{font-weight:400;font-size:13px;color:#8C7D70;letter-spacing:1px;transition:opacity 0.5s}
+.hint.h{opacity:0}
+.cta{background:linear-gradient(135deg,#B85C38,#C07850);color:#F5F0EA;font-weight:500;font-size:14px;letter-spacing:1px;padding:10px 26px;border-radius:30px;white-space:nowrap;text-decoration:none;transition:all 0.3s;display:none}
+.cta.v{display:block}
+.cta:active{transform:scale(0.97)}
+.dots{display:flex;gap:6px;margin-bottom:4px;flex-wrap:wrap;justify-content:center;max-width:300px}
+.dot{width:7px;height:7px;border-radius:50%;background:#5A4A38;cursor:pointer;transition:all 0.3s}
+.dot.a{background:#C07850;transform:scale(1.2)}
+.card-area.sl .cw{animation:slo 0.37s ease-in forwards}
+.card-area.sr .cw{animation:sro 0.37s ease-in forwards}
+.card-area.sil .cw{animation:sli 0.37s ease-out forwards}
+.card-area.sir .cw{animation:sri 0.37s ease-out forwards}
+@keyframes slo{from{transform:translateX(0);opacity:1}to{transform:translateX(-110%);opacity:0}}
+@keyframes sro{from{transform:translateX(0);opacity:1}to{transform:translateX(110%);opacity:0}}
+@keyframes sli{from{transform:translateX(110%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes sri{from{transform:translateX(-110%);opacity:0}to{transform:translateX(0);opacity:1}}
+
+</style>
+</head>
+<body>
+
+<!-- ══ INTRO SCREENS ══ -->
+<!-- SCREEN 1 -->
+<div class="screen">
+  <span class="s1-label">52 Week Healing Deck</span>
+  <span class="s1-the">The</span>
+  <span class="s1-manual">Manual.</span>
+  <span class="s1-sub">For the late-diagnosed &amp; finally seen</span>
+
+  <div class="card-fan">
+    <div class="fan-card dark">
+      <span class="fan-phase">Phase One — Feeling</span>
+      <div class="fan-back-label">This week's reflection</div>
+      <p class="fan-text-dark">When did shame first show up in your life?</p>
+      <div class="fan-back-divider"></div>
+      <div class="fan-action-label">This week's action</div>
+      <p class="fan-action-text">Name the shame. Just naming it begins to release it.</p>
+      <span class="fan-brand-dark">The Manual</span>
+    </div>
+    <div class="fan-card cream1">
+      <span class="fan-week">Week 4</span>
+      <div class="fan-dot" style="background:#c07050"></div>
+      <div class="fan-icon">🕯️</div>
+      <p class="fan-text">Forgive her. She didn't know.</p>
+      <div class="fan-divider"></div>
+      <span class="fan-brand">The Manual</span>
+    </div>
+    <div class="fan-card cream2">
+      <span class="fan-week">Week 10</span>
+      <div class="fan-dot" style="background:#c07050"></div>
+      <div class="fan-icon">🌸</div>
+      <p class="fan-text">You didn't waste those years. You survived them without a map.</p>
+      <div class="fan-divider"></div>
+      <span class="fan-brand">The Manual</span>
+    </div>
+    <div class="fan-card sage1">
+      <span class="fan-week">Week 36</span>
+      <div class="fan-dot" style="background:#c9a96e"></div>
+      <div class="fan-icon">⚡</div>
+      <p class="fan-text">You braced for abandonment before they even had a chance to stay.</p>
+      <div class="fan-divider"></div>
+      <span class="fan-brand">The Manual</span>
+    </div>
+    <div class="fan-card sage2">
+      <span class="fan-week">Week 19</span>
+      <div class="fan-dot" style="background:#8a9c7e"></div>
+      <div class="fan-icon">🫂</div>
+      <p class="fan-text">I am finally the parent to myself that I always needed.</p>
+      <div class="fan-divider"></div>
+      <span class="fan-brand">The Manual</span>
+    </div>
+  </div>
+
+  <ul class="s1-bullets">
+    <li><span class="bullet-dot" style="background:#c07050"></span>17 Affirmation cards</li>
+    <li><span class="bullet-dot" style="background:#8a9c7e"></span>17 Re-parenting prompts</li>
+    <li><span class="bullet-dot" style="background:#c9a96e"></span>18 RSD Understanding cards</li>
+  </ul>
+</div>
+
+<!-- SCREEN 2 -->
+<div class="screen centered">
+  <span class="s2-deck-label">The Manual — 52 Week Healing Deck</span>
+  <h2 class="s2-headline">The guide you<br><em>should have had.</em><br>Now you do.</h2>
+  <span class="s2-sub">For the late-diagnosed. For the finally understood.</span>
+  <div class="s2-stats">
+    <div class="stat-item"><span class="stat-num">52</span><span class="stat-label">Cards</span></div>
+    <div class="stat-item"><span class="stat-num">52</span><span class="stat-label">Weeks</span></div>
+    <div class="stat-item"><span class="stat-num">1</span><span class="stat-label">Manual</span></div>
+  </div>
+  <span class="s2-scroll">↓ Explore the deck</span>
+</div>
+
+<!-- SCREEN 3 -->
+<div class="screen centered">
+  <div class="s3-legend">
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#c07050"></span>
+      <span class="legend-text">Affirmations (Weeks 1–17)</span>
+    </div>
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#8a9c7e"></span>
+      <span class="legend-text">Re-parenting (Weeks 18–34)</span>
+    </div>
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#c9a96e"></span>
+      <span class="legend-text">RSD Understanding (Weeks 35–52)</span>
+    </div>
+  </div>
+  <p class="s3-tagline">"The guide you should have had. Now you do."</p>
+</div>
+
+<!-- SCREEN 4 -->
+<div class="screen centered">
+  <div class="phase-line"></div>
+  <div class="phase-tag clay">Phase One</div>
+  <h2 class="phase-title">Feeling</h2>
+  <p class="phase-desc">Begin here. These affirmations ask nothing of you except to receive them. You don't have to believe them yet. Just let them land.</p>
+  <p class="phase-weeks">Weeks 1 – 17</p>
+</div>
+
+<!-- SCREEN 5 -->
+<div class="screen centered">
+  <div class="phase-line"></div>
+  <div class="phase-tag sage">Phase Two</div>
+  <h2 class="phase-title">Doing</h2>
+  <p class="phase-desc">Now we begin the gentle work. Re-parenting is learning to give yourself what you needed but never received. One small act of grace at a time.</p>
+  <p class="phase-weeks">Weeks 18 – 34</p>
+</div>
+
+<!-- SCREEN 6 -->
+<div class="screen centered">
+  <div class="phase-line"></div>
+  <div class="phase-tag gold">Phase Three</div>
+  <h2 class="phase-title">Understanding</h2>
+  <p class="phase-desc">Knowledge is the final piece of forgiveness. When you understand why your nervous system did what it did, the shame finally has somewhere to go.</p>
+  <p class="phase-weeks">Weeks 35 – 52</p>
+</div>
+
+<!-- ══ DECK SECTION ══ -->
+<div class="deck-section">
+<div class="hdr"><h1>The Manual.</h1><div class="sub">52 Week Healing Deck</div></div>
+<div class="main">
+<button class="arr" id="pb" aria-label="Previous" disabled="">‹</button>
+<div class="card-area" id="ca">
+<div class="cw" id="cw">
+<div class="card" id="c">
+<div class="face fr" id="cf"><span class="wk">Week 1</span><span class="pd" style="background:#B85C38"></span><div class="ico">🌱</div><div class="aff">You weren't failing. You were flying blind.</div><div class="dv"></div><div class="br">The Manual</div></div>
+<div class="face bk" id="cb"><div class="pl">Phase One — Feeling</div><div class="sec"><div class="sl">This Week's Reflection</div><div class="ref">What's one thing you blamed yourself for that makes more sense now?</div><div class="bd"></div><div class="al">This Week's Action</div><div class="act">Sit with this card for 5 minutes this week.</div></div><div class="br">The Manual</div></div>
+</div>
+</div>
+</div>
+<button class="arr" id="nb" aria-label="Next">›</button>
+</div>
+<div class="foot">
+<div class="dots" id="dots"><div class="dot a"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+<div class="hint" id="hint">tap card to flip</div>
+<a class="cta" id="cta" href="https://www.etsy.com/ca/listing/4482220615/the-manual-52-week-adhd-healing-deck-o" target="_blank">Week 52 complete ✨</a>
+</div>
+</div>
+
+<script>
+var cards=[{"w":"Week 1","ico":"🌱","aff":"You weren't failing. You were flying blind.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What's one thing you blamed yourself for that makes more sense now?","al":"This Week's Action","act":"Sit with this card for 5 minutes this week."},{"w":"Week 2","ico":"🤍","aff":"Not lazy. Not broken. Not too much. Just undiagnosed.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"Which of these words did someone use to describe you? Which did you use on yourself?","al":"This Week's Action","act":"Write down where you first heard these words."},{"w":"Week 3","ico":"🌿","aff":"The shame was never the truth. The diagnosis was.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"When did shame first show up in your life? How old were you?","al":"This Week's Action","act":"Name the shame. Just naming it begins to release it."},{"w":"Week 4","ico":"🕯️","aff":"Forgive her. She didn't know.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"Can you picture the younger version of you who needed this most?","al":"This Week's Action","act":"Find a photo of yourself as a child. Look at her with kindness."},{"w":"Week 5","ico":"🌾","aff":"You survived yourself without ever knowing why it was so hard.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What does survival look like to you now that you understand what you were surviving?","al":"This Week's Action","act":"Acknowledge one way you were stronger than you knew."},{"w":"Week 6","ico":"☁️","aff":"The cruelest part wasn't the ADHD. It was how long you thought it was just you.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What would you have done differently if you'd known sooner?","al":"This Week's Action","act":"Write that younger self a one-sentence letter."},{"w":"Week 7","ico":"🍂","aff":"You held yourself to a standard built for a brain you don't have.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"Whose standards were you trying to meet?","al":"This Week's Action","act":"Name one standard you're willing to release this week."},{"w":"Week 8","ico":"🌙","aff":"Late is not too late. Understanding changes everything from this moment forward.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What feels possible now that wasn't before?","al":"This Week's Action","act":"Write down one thing you want to try now that you understand yourself better."},{"w":"Week 9","ico":"🫶","aff":"Stop apologizing for a diagnosis you didn't know you had.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"Who have you over-apologized to — including yourself?","al":"This Week's Action","act":"Practice one day this week without a single unnecessary apology."},{"w":"Week 10","ico":"🌸","aff":"You didn't waste those years. You survived them without a map.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What did you learn in those years that no one else could have taught you?","al":"This Week's Action","act":"Find one gift hidden inside the hardest chapter."},{"w":"Week 11","ico":"💛","aff":"You are not your worst moments without a diagnosis. You are everything you did despite not having one.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What are you most proud of surviving?","al":"This Week's Action","act":"Say this out loud three times this week. Mean it a little more each time."},{"w":"Week 12","ico":"🌺","aff":"I am learning now what I needed to learn then. It still counts.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What are you learning about yourself right now that feels most important?","al":"This Week's Action","act":"Write down three things you now understand about yourself."},{"w":"Week 13","ico":"🍃","aff":"My brain is not broken. It was just never given the right tools.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What tools are you discovering that are actually working for your brain?","al":"This Week's Action","act":"Identify one tool — physical, mental, or emotional — to try this week."},{"w":"Week 14","ico":"✨","aff":"Decades of 'what's wrong with me' answered in one diagnosis.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"Do you remember where you were when things finally made sense?","al":"This Week's Action","act":"Honor that moment. It was a turning point."},{"w":"Week 15","ico":"🌻","aff":"She wasn't difficult. She was drowning and nobody taught her to swim.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"In what situations were you labeled 'difficult' when you were actually overwhelmed?","al":"This Week's Action","act":"Rewrite one 'difficult' memory through a compassionate lens."},{"w":"Week 16","ico":"🕊️","aff":"I am allowed to grieve the years and still be grateful for today.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What are you grieving? What are you grateful for? Can both be true?","al":"This Week's Action","act":"Make two lists. Let them coexist."},{"w":"Week 17","ico":"🌄","aff":"I am not starting over. I am starting with everything I now know.","dc":"#B85C38","ph":"Phase One — Feeling","sl":"This Week's Reflection","ref":"What do you know now that makes you powerful in a way you weren't before?","al":"This Week's Action","act":"Name your three greatest strengths as a late-diagnosed person."},{"w":"Week 18","ico":"🪴","aff":"I will speak to myself the way I would have needed someone to speak to me at eight years old.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What did 8-year-old you most need to hear that no one said?","al":"This Week's Action","act":"Say those exact words to yourself in the mirror this week."},{"w":"Week 19","ico":"🫂","aff":"I am finally the parent to myself that I always needed.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What does good parenting feel like to you? Have you ever experienced it?","al":"This Week's Action","act":"Do one nurturing thing for yourself today that a loving parent would do."},{"w":"Week 20","ico":"🌱","aff":"The child in me deserved patience. So does the adult I became.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Where are you being hardest on yourself right now?","al":"This Week's Action","act":"Replace one harsh self-instruction with a patient one this week."},{"w":"Week 21","ico":"📖","aff":"I am rewriting the story I was told about who I am.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What's one story about yourself you were handed that isn't actually yours?","al":"This Week's Action","act":"Write one sentence of the new story — who you actually are."},{"w":"Week 22","ico":"🕯️","aff":"I forgive myself for every coping mechanism I needed just to survive.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What coping mechanisms did you use that you now understand were just survival?","al":"This Week's Action","act":"Name them without judgment. They kept you here."},{"w":"Week 23","ico":"🌿","aff":"I get to try again. Not because I failed, but because I know more now.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What's something you want to try again with new understanding?","al":"This Week's Action","act":"Take one small step toward it this week."},{"w":"Week 24","ico":"💙","aff":"I deserve the same compassion I give to everyone else.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Think of someone you love deeply. How would you treat them if they had your diagnosis?","al":"This Week's Action","act":"Give yourself that same treatment once this week."},{"w":"Week 25","ico":"🌾","aff":"I am allowed to ask for what I need without explaining or apologizing.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What do you need right now that you haven't asked for?","al":"This Week's Action","act":"Ask for one thing this week. No apology attached."},{"w":"Week 26","ico":"🔑","aff":"Understanding myself is not self-indulgence. It is self-preservation.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Do you ever feel guilty for focusing on your own healing?","al":"This Week's Action","act":"Name one way healing yourself also helps the people around you."},{"w":"Week 27","ico":"🫶","aff":"My nervous system was doing its best. So was I.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Can you extend the same grace to your body that you'd give a frightened child?","al":"This Week's Action","act":"Practice one grounding exercise when your nervous system spikes this week."},{"w":"Week 28","ico":"🌸","aff":"I set boundaries not to push people away but to finally let myself stay.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Where in your life does a boundary need to be drawn — for your own safety?","al":"This Week's Action","act":"Identify the boundary. You don't have to enforce it yet. Just name it."},{"w":"Week 29","ico":"☀️","aff":"I do not have to earn rest. I do not have to earn care. I just have to be.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"When did you start believing you had to earn the right to be okay?","al":"This Week's Action","act":"Rest for 20 minutes this week with zero productivity attached to it."},{"w":"Week 30","ico":"🌙","aff":"Healing is not linear and I am not behind.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"Where are you comparing your healing journey to someone else's?","al":"This Week's Action","act":"Unfollow or mute one account that makes you feel behind."},{"w":"Week 31","ico":"🌺","aff":"I am teaching myself that I am safe, one moment at a time.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What does safety feel like in your body? Can you recall a moment of it?","al":"This Week's Action","act":"Create one small ritual this week that signals safety to your nervous system."},{"w":"Week 32","ico":"🍃","aff":"I no longer abandon myself to keep the peace.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"When do you tend to abandon your own needs to manage someone else's emotions?","al":"This Week's Action","act":"Notice it once this week. You don't have to change it yet. Just notice."},{"w":"Week 33","ico":"✨","aff":"I choose to parent myself with warmth, patience, and the truth.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What is the truth about who you are — the generous truth, not the critical one?","al":"This Week's Action","act":"Write three true, generous things about yourself."},{"w":"Week 34","ico":"💛","aff":"Every act of self-compassion is an act of resistance against everything you were told about yourself.","dc":"#7A8C6E","ph":"Phase Two — Doing","sl":"Re-parenting Prompt","ref":"What were you told? What is the compassionate counter-truth?","al":"This Week's Action","act":"Write the counter-truth and put it somewhere you'll see it this week."},{"w":"Week 35","ico":"🧠","aff":"RSD isn't being sensitive. It's your nervous system reading rejection as danger — because for years, it was.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Can you trace RSD back to a specific early experience of rejection or criticism?","al":"This Week's Action","act":"Name the origin without reliving it. Just acknowledge it exists."},{"w":"Week 36","ico":"⚡","aff":"You braced for abandonment before they even had a chance to stay.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"In which relationships have you self-sabotaged to avoid being left first?","al":"This Week's Action","act":"Name one relationship where RSD showed up as a wall."},{"w":"Week 37","ico":"🌊","aff":"Rejection didn't just sting. It detonated. That's RSD. That's real.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What does RSD feel like in your body when it's activated?","al":"This Week's Action","act":"Map it physically. Knowing the sensation helps you catch it sooner."},{"w":"Week 38","ico":"🪞","aff":"You weren't needy. Your nervous system was terrified.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Who labeled you as needy? What were you actually asking for?","al":"This Week's Action","act":"Reframe one 'needy' memory as a legitimate need that deserved to be met."},{"w":"Week 39","ico":"📨","aff":"RSD made you rehearse the rejection before you even sent the email.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Where does RSD show up most in your daily life? Work? Relationships? Creative output?","al":"This Week's Action","act":"Send one thing this week that RSD was telling you not to send."},{"w":"Week 40","ico":"🫀","aff":"The apology you owe yourself for every relationship you thought you ruined.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Which lost relationship grieves you most when you see it through an RSD lens?","al":"This Week's Action","act":"Write yourself the apology. Not to send — just to receive."},{"w":"Week 41","ico":"🌿","aff":"RSD isn't drama. It's decades of being told you're too much until your brain started agreeing before anyone else could.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"When did you start calling yourself 'too much' before anyone else did?","al":"This Week's Action","act":"Notice this week when you pre-emptively shrink yourself."},{"w":"Week 42","ico":"🔍","aff":"ADHD in women often looks like anxiety, perfectionism, and people-pleasing. It wasn't a personality flaw. It was a coping strategy.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Which coping strategies did you develop that looked like personality traits?","al":"This Week's Action","act":"Name one. See it as clever adaptation, not character."},{"w":"Week 43","ico":"🧩","aff":"Masking is exhausting because it requires you to be a different person all day long.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Who do you mask the most around? What would it feel like to unmask with them?","al":"This Week's Action","act":"Find one safe space this week where you don't have to perform."},{"w":"Week 44","ico":"💭","aff":"The out-of-body experiences weren't dissociation. They were your brain watching itself struggle without knowing why.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Do you remember watching yourself from the outside? What was happening in those moments?","al":"This Week's Action","act":"Recognize those moments now as overwhelm signals, not failure."},{"w":"Week 45","ico":"🌸","aff":"Emotional dysregulation isn't weakness. It's a nervous system that was never given tools to regulate.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What regulation tools are you discovering that actually work for your brain?","al":"This Week's Action","act":"Practice one regulation tool this week intentionally, not in crisis."},{"w":"Week 46","ico":"🤝","aff":"You don't need people to understand everything. You need people who are willing to try.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Who in your life is willing to try to understand?","al":"This Week's Action","act":"Lean into one of those people a little more this week."},{"w":"Week 47","ico":"📚","aff":"The diagnosis isn't a label that limits you. It's a key that finally opens the right doors.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What doors have opened — or could open — now that you have this key?","al":"This Week's Action","act":"Name one door you're ready to walk through."},{"w":"Week 48","ico":"🌙","aff":"Impulsivity isn't recklessness. It's a brain that moves faster than the pause button.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What impulsive decisions do you most wish you could revisit now?","al":"This Week's Action","act":"Forgive one. Just one. This week."},{"w":"Week 49","ico":"🌻","aff":"Your intensity was never the problem. The world just didn't know what to do with it.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Where has your intensity served you in ways that surprised even you?","al":"This Week's Action","act":"Claim your intensity as a strength in one situation this week."},{"w":"Week 50","ico":"🕊️","aff":"Everything you survived without knowing — imagine what you will do now that you do.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What does the next chapter of your life look like now?","al":"This Week's Action","act":"Write three sentences about the person you are becoming."},{"w":"Week 51","ico":"✨","aff":"You are not starting over. You are the most informed version of yourself that has ever existed.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"What wisdom do you carry that only comes from the path you walked?","al":"This Week's Action","act":"Share one piece of that wisdom with someone who needs it."},{"w":"Week 52","ico":"🌅","aff":"You made it through a year of seeing yourself clearly. That is not small. That is everything.","dc":"#C4A54A","ph":"Phase Three — Understanding","sl":"Understanding Deeper","ref":"Who were you 52 weeks ago? Who are you now?","al":"This Week's Action","act":"Write yourself a letter from the person you've become. You've earned it."}];
+var ci=0,fl=false,an=false;
+var ce=document.getElementById('c'),cf=document.getElementById('cf'),cb=document.getElementById('cb'),ca=document.getElementById('ca'),ds=document.getElementById('dots'),pb=document.getElementById('pb'),nb2=document.getElementById('nb'),hi=document.getElementById('hint'),ct=document.getElementById('cta'),cw=document.getElementById('cw');
+cards.forEach(function(_,i){var d=document.createElement('div');d.className='dot'+(i===0?' a':'');d.onclick=function(){if(!an&&i!==ci)go(i)};ds.appendChild(d)});
+function render(i){var c=cards[i];cf.innerHTML='<span class="wk">'+c.w+'</span><span class="pd" style="background:'+c.dc+'"></span><div class="ico">'+c.ico+'</div><div class="aff">'+c.aff+'</div><div class="dv"></div><div class="br">The Manual</div>';cb.innerHTML='<div class="pl">'+c.ph+'</div><div class="sec"><div class="sl">'+c.sl+'</div><div class="ref">'+c.ref+'</div><div class="bd"></div><div class="al">'+c.al+'</div><div class="act">'+c.act+'</div></div><div class="br">The Manual</div>';document.querySelectorAll('.dot').forEach(function(d,j){d.className='dot'+(j===i?' a':'')});pb.disabled=i===0;nb2.disabled=i===cards.length-1;ct.classList.toggle('v',i===cards.length-1)}
+function flip(){if(an)return;fl=!fl;ce.classList.toggle('fl',fl);hi.classList.add('h')}
+function nav(dir){if(an)return;var ni=ci+dir;if(ni<0||ni>=cards.length)return;go(ni,dir)}
+function go(ni,dir){if(an)return;an=true;if(dir===undefined)dir=ni>ci?1:-1;if(fl){fl=false;ce.classList.remove('fl')}ca.className='card-area '+(dir>0?'sl':'sr');setTimeout(function(){ci=ni;render(ci);ca.className='card-area '+(dir>0?'sil':'sir');setTimeout(function(){ca.className='card-area';an=false;hi.classList.remove('h')},370)},370)}
+cw.addEventListener('click',flip);
+pb.addEventListener('click',function(){nav(-1)});
+nb2.addEventListener('click',function(){nav(1)});
+var tsx=0;
+ca.addEventListener('touchstart',function(e){tsx=e.changedTouches[0].screenX},{passive:true});
+ca.addEventListener('touchend',function(e){var d=tsx-e.changedTouches[0].screenX;if(Math.abs(d)>50){if(d>0)nav(1);else nav(-1)}},{passive:true});
+render(0);
+</script>
+
+
+</body></html>
